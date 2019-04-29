@@ -3,7 +3,7 @@ This is a simple website built with Next.js using dynamic routing and a remote R
 
 ### Tech
 
-Dillinger uses a number of open source projects to work properly:
+This project uses a number of open source projects to work properly:
 
 * [Next.js] - React framework
 * [node.js] - evented I/O for the backend
