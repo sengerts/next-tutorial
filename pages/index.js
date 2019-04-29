@@ -38,7 +38,7 @@ function PostLink({ post }) {
 export default function Index() {
   return (
     <Layout>
-      <h1>My Blog</h1>
+      <h1>Blog by Tobias Senger</h1>
       <ul>
         {getPosts().map(post => (
           <PostLink key={post.id} post={post} />
