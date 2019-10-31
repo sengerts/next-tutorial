@@ -1,6 +1,8 @@
 # Next.js Tutorial Project
 This is a simple website built with Next.js using dynamic routing and a remote REST API.
 
+Note: For now, the blog contents are static and not taken from an external API or database.
+
 ### Tech
 
 This project uses a number of open source projects to work properly:
