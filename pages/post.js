@@ -2,6 +2,15 @@ import { withRouter } from 'next/router'
 import Layout from '../components/MyLayout.js'
 import Markdown from 'react-markdown'
 
+function getPostContents() {
+    let a = [];
+    a['hello-nextjs'] = 'Dies ist der Inhalt für den Post hello-nextjs';
+    a['learn-nextjs'] = 'Dies ist der Inhalt für den Post learn-nextjs';
+    a['deploy-nextjs'] = 'Dies ist der Inhalt für den Post learn-nextjs';
+    a['react-tutorial'] = 'Dies ist der Inhalt für den Post react-tutorial';
+    return a;
+}
+
 function Post(props) {
   return (
     <Layout>
@@ -9,15 +18,11 @@ function Post(props) {
       <div className="markdown">
         <Markdown
           source={`
-This is our blog post.
-Yes. We can have a [link](/link).
-And we can have a title as well.
+Dies ist ein Beispiel-Blogeintrag.
 
-### This is a title
-
-And here's the content.
-   `}
-        />
+### Inhalt:
+   `    }/>
+        <p>{getPostContents()[props.router.query.title]}</p>
       </div>
       <style jsx global>{`
         .markdown {

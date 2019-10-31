@@ -5,14 +5,15 @@ function getPosts() {
   return [
     { id: 'hello-nextjs', title: 'Hello Next.js' },
     { id: 'learn-nextjs', title: 'Learn Next.js is awesome' },
-    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' }
+    { id: 'deploy-nextjs', title: 'Deploy apps with ZEIT' },
+    { id: 'react-tutorial', title: 'React Tutorial' }
   ]
 }
 
 function PostLink({ post }) {
   return (
     <li>
-      <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
+      <Link as={`/p/${post.id}`} href={`/post?id=${post.id}&title=${post.title}`}>
         <a>{post.title}</a>
       </Link>
       <style jsx>{`
