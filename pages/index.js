@@ -13,7 +13,7 @@ function getPosts() {
 function PostLink({ post }) {
   return (
     <li>
-      <Link as={`/p/${post.id}`} href={`/post?title=${post.title}`}>
+      <Link as={`/p/${post.id}`} href={`/post?id=${post.id}&title=${post.title}`}>
         <a>{post.title}</a>
       </Link>
       <style jsx>{`
