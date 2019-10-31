@@ -9,13 +9,11 @@ function Post(props) {
       <div className="markdown">
         <Markdown
           source={`
-This is our blog post.
-Yes. We can have a [link](/link).
-And we can have a title as well.
+Dies ist ein Beispiel-Blogeintrag.
 
-### This is a title
+### Beitragstitel
 
-And here's the content.
+Inhalt:
    `}
         />
       </div>
